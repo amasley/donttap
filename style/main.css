@@ -30,28 +30,55 @@ main {
   letter-spacing: 1rem;
   text-align: center;
 }
-#game-score{
+#game-score, #game-timer{
   color: var(--text-color);
   font-size: 2rem;
   font-weight: bolder;
 }
 #game-area {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
   height: 75%; 
-  
 }
-
-.game-square {
+#game-over {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  width: 20%;
+  height: 50%;
+  z-index: 9999;
+  display: none;
+}
+#game-over-text {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+#game-over p{
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: normal;
+}
+.square {
   height: 100%;
   aspect-ratio: 1/1;
-  background-color: #fff;
+  
   border: 1px solid var(--secondary-color);
   place-self: center;
   cursor: pointer;
 }
 
-.game-square[data-active=""] {
-  background-color: #000 ;
+.square[data-active="true"] {
+  background-color: var(--background-color) ;
 }
+.square[data-active="false"]{
+
+  background-color: var(--text-color);
+} 

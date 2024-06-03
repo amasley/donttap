@@ -2,6 +2,7 @@ const squares = document.querySelectorAll('.game-square');
 let score = document.getElementById('game-score');
 let highScore = localStorage.getItem('high-score');
 
+\
 export function init() {
   initialSquares();
   gameStart();
