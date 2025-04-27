@@ -3,28 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Don't Tap - A game where you must avoid tapping the white squares.">
+  <meta name="author" content="Alex Masley">
+  <link rel="stylesheet" href="./CSS/normalize.css">
   <link rel="stylesheet" href="./CSS/main.css">
   <script src="./scripts/main.js" defer></script>
   <title>Don't Tap</title>
 </head>
 <body>
-  <section id="game-area">
-    <div class="square" data-square="0"></div>
-    <div class="square" data-square="1"></div>
-    <div class="square" data-square="2"></div>
-    <div class="square" data-square="3"></div>
-    <div class="square" data-square="4"></div>
-    <div class="square" data-square="5"></div>
-    <div class="square" data-square="6"></div>
-    <div class="square" data-square="7"></div>
-    <div class="square" data-square="8"></div>
-    <div class="square" data-square="9"></div>
-    <div class="square" data-square="10"></div>
-    <div class="square" data-square="11"></div>
-    <div class="square" data-square="12"></div>
-    <div class="square" data-square="13"></div>
-    <div class="square" data-square="14"></div>
-    <div class="square" data-square="15"></div>
-  </section>
+  <header>
+    <h1>don't tap</h1>
+    <div>
+      <p id="score-text">Score: <span id="score-value"></span></p>
+      <p id="highscore-text">High Score: <span id="highscore-value"></span></p>
+      
+    </div>
+  </header>
+  <main id="game-area">
+    <div class="square" data-square="0" data-active="false"></div>
+    <div class="square" data-square="1" data-active="false"></div>
+    <div class="square" data-square="2" data-active="false"></div>
+    <div class="square" data-square="3" data-active="false"></div>
+    <div class="square" data-square="4" data-active="false"></div>
+    <div class="square" data-square="5" data-active="false"></div>
+    <div class="square" data-square="6" data-active="false"></div>
+    <div class="square" data-square="7" data-active="false"></div>
+    <div class="square" data-square="8" data-active="false"></div>
+    <div class="square" data-square="9" data-active="false"></div>
+    <div class="square" data-square="10" data-active="false"></div>
+    <div class="square" data-square="11" data-active="false"></div>
+    <div class="square" data-square="12" data-active="false"></div>
+    <div class="square" data-square="13" data-active="false"></div>
+    <div class="square" data-square="14" data-active="false"></div>
+    <div class="square" data-square="15" data-active="false"></div>
+  </main>
 </body>
 </html>
